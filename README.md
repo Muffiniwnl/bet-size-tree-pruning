@@ -1,3 +1,17 @@
+This is for an add on to the existing TexasHoldemSovlerJava project since the project has been discontinued for years.
+
+## Bet size Tree pruner addon
+
+Input the amount of bet sizes you would like on every street
+
+There are 2 ways to use it
+
+Case 1(works the best): 1 bet size flop
+
+Input 1 size for flop and any amount for turn and river, but uncheck the box to bet size prune, and just solve normally. Once you get the output, click the box that says prune the turn, and select the turn card which will resolve the turn for the highest ev bet size for that specific turn card, do the same for the river
+
+Case 2(a little worse): Input as many sizes for each street and output will be the pruned tree. The main difference is you can't solve for specific turn cards this way and will only pick the best sizes for your whole range instead of on different turn cards which is a lower ev strategy.
+
 # TexasHoldemSolverJava
 
 [![release](https://img.shields.io/github/v/release/bupticybee/TexasHoldemSolverJava?label=release&style=flat-square)](https://github.com/bupticybee/TexasHoldemSolverJava/releases)
@@ -277,14 +291,4 @@ If you somehow feel our java version is not fast enough,here is a ported [c++ ve
 
 icybee@yeah.net
 
-Bet size Tree pruner addon
 
-Input the amount of bet sizes you would like on every street
-
-There are 2 ways to use it
-
-Case 1(works the best): 1 bet size flop
-
-Input 1 size for flop and any amount for turn and river, but uncheck the box to bet size prune, and just solve normally. Once you get the output, click the box that says prune the turn, and select the turn card which will resolve the turn for the highest ev bet size for that specific turn card, do the same for the river
-
-Case 2(a little worse): Input as many sizes for each street and output will be the pruned tree. The main difference is you can't solve for specific turn cards this way and will only pick the best sizes for your whole range instead of on different turn cards which is a lower ev strategy.
